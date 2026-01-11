@@ -18,22 +18,22 @@ A robust, strongly-typed, and thread-safe Java SDK for the [Plutu](https://plutu
 
 ## Installation
 
-Since this is not yet published to Maven Central, you can build it locally:
-
-```bash
-git clone 
-cd plutu-java-sdk
-mvn install
-```
-
-Then add the dependency to your `pom.xml`:
+**Using Maven**
+Add the dependency to your `pom.xml`:
 
 ```xml
 <dependency>
-    <groupId>ly.plutu</groupId>
+    <groupId>io.github.f0ka</groupId>
     <artifactId>plutu-java-sdk</artifactId>
     <version>0.1.0</version>
 </dependency>
+```
+
+**Using Gradle**
+Add the dependency to your `build.gradle`:
+
+```gradle
+implementation 'io.github.f0ka:plutu-java-sdk:0.1.0'
 ```
 
 ## Usage
