@@ -2,7 +2,9 @@
 
 A robust, strongly-typed, and thread-safe Java SDK for the [Plutu](https://plutu.ly) payment gateway.
 
-**⚠️ DISCLAIMER: This is an UNOFFICIAL library. It is not created, maintained, or endorsed by Plutu. Use it at your own risk.**
+**⚠️ DISCLAIMER: This is an UNOFFICIAL library. It is not created, maintained, or endorsed by Plutu. Use it at your own risk. The library logic follows the official [PHP SDK](https://github.com/Plutu-ly/plutu-php) logic.**
+
+**⚠️ NOTE: This SDK has NOT been tested with a real API key or Sandbox environment yet. It is based solely on the API documentation. Please report any issues you encounter.**
 
 ## Features
 
@@ -18,13 +20,21 @@ A robust, strongly-typed, and thread-safe Java SDK for the [Plutu](https://plutu
 
 ## Installation
 
+Since this is not yet published to Maven Central, you can build it locally.
+
 **Using Maven**
 
-Add the dependency to your `pom.xml`:
+1. Clone and install locally:
+```bash
+git clone https://github.com/f0ka/plutu-java-sdk.git
+cd plutu-java-sdk
+mvn install
+```
 
+2. Add the dependency to your `pom.xml`:
 ```xml
 <dependency>
-    <groupId>io.github.f0ka</groupId>
+    <groupId>ly.plutu</groupId>
     <artifactId>plutu-java-sdk</artifactId>
     <version>0.1.0</version>
 </dependency>
@@ -32,10 +42,24 @@ Add the dependency to your `pom.xml`:
 
 **Using Gradle**
 
-Add the dependency to your `build.gradle`:
+1. Clone and build/publish locally:
+```bash
+git clone https://github.com/f0ka/plutu-java-sdk.git
+cd plutu-java-sdk
+# Generates the jar in build/libs
+./gradlew build publishToMavenLocal
+```
 
+2. Add `mavenLocal()` to your repositories and the dependency:
 ```gradle
-implementation 'io.github.f0ka:plutu-java-sdk:0.1.0'
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'ly.plutu:plutu-java-sdk:0.1.0'
+}
 ```
 
 ## Usage
