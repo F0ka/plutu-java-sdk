@@ -21,12 +21,13 @@ class AdfaliServiceImplTest {
     private BiFunction<String, Map<String, String>, PlutuRawResponse> mockCaller;
 
     @BeforeEach
+    @SuppressWarnings("unchecked")
     void setUp() {
         PlutuConfig config = new PlutuConfig();
         config.setApiKey("test-key");
         config.setAccessToken("test-token");
         
-        mockCaller = Mockito.mock(BiFunction.class);
+        mockCaller = (BiFunction<String, Map<String, String>, PlutuRawResponse>) Mockito.mock(BiFunction.class);
         adfaliService = new AdfaliServiceImpl(config, mockCaller);
     }
 

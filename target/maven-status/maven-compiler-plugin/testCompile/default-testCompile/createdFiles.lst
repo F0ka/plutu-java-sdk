@@ -1,2 +1,5 @@
-ly\plutu\sdk\service\impl\AdfaliServiceImplTest.class
+ly\plutu\sdk\service\impl\TlyncServiceImplTest.class
+ly\plutu\sdk\service\impl\SadadServiceImplTest.class
+ly\plutu\sdk\service\impl\LocalBankCardsServiceImplTest.class
 ly\plutu\sdk\util\CallbackVerifierTest.class
+ly\plutu\sdk\service\impl\MpgsServiceImplTest.class

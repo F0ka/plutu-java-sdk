@@ -57,7 +57,7 @@ public final class ValidationUtils {
 
     public static void validateUrl(String url) {
         try {
-            new java.net.URL(url);
+            java.net.URI.create(url).toURL();
         } catch (Exception ex) {
             throw new InvalidArgumentException("Invalid URL: " + url);
         }
