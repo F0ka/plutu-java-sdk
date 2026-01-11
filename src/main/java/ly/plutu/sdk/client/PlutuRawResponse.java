@@ -1,0 +1,19 @@
+package ly.plutu.sdk.client;
+
+public class PlutuRawResponse {
+    private final int statusCode;
+    private final String body;
+
+    public PlutuRawResponse(int statusCode, String body) {
+        this.statusCode = statusCode;
+        this.body = body;
+    }
+
+    public int getStatusCode() {
+        return statusCode;
+    }
+
+    public String getBody() {
+        return body;
+    }
+}
