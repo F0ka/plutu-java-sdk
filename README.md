@@ -19,6 +19,7 @@ A robust, strongly-typed, and thread-safe Java SDK for the [Plutu](https://plutu
 ## Installation
 
 **Using Maven**
+
 Add the dependency to your `pom.xml`:
 
 ```xml
@@ -30,6 +31,7 @@ Add the dependency to your `pom.xml`:
 ```
 
 **Using Gradle**
+
 Add the dependency to your `build.gradle`:
 
 ```gradle
