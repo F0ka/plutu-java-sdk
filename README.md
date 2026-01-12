@@ -4,7 +4,7 @@ A robust, strongly-typed, and thread-safe Java SDK for the [Plutu](https://plutu
 
 **⚠️ DISCLAIMER: This is an UNOFFICIAL library. It is not created, maintained, or endorsed by Plutu. Use it at your own risk. The library logic follows the official [PHP SDK](https://github.com/Plutu-ly/plutu-php) logic.**
 
-**⚠️ NOTE: This SDK has NOT been tested with a real API key or Sandbox environment yet. It is based solely on the API documentation. Please report any issues you encounter.**
+**⚠️ NOTE: This SDK has been tested with the Plutu Sandbox environment. If you encounter any issues, please report them.**
 
 ## Features
 
