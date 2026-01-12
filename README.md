@@ -36,7 +36,7 @@ mvn install
 <dependency>
     <groupId>ly.plutu</groupId>
     <artifactId>plutu-java-sdk</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 
@@ -58,7 +58,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'ly.plutu:plutu-java-sdk:0.1.0'
+    implementation 'ly.plutu:plutu-java-sdk:0.2.0'
 }
 ```
 
