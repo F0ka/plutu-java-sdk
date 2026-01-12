@@ -4,8 +4,6 @@ A robust, strongly-typed, and thread-safe Java SDK for the [Plutu](https://plutu
 
 **⚠️ DISCLAIMER: This is an UNOFFICIAL library. It is not created, maintained, or endorsed by Plutu. Use it at your own risk. The library logic follows the official [PHP SDK](https://github.com/Plutu-ly/plutu-php) logic.**
 
-**⚠️ NOTE: This SDK has been tested with the Plutu Sandbox environment. If you encounter any issues, please report them.**
-
 ## Features
 
 - **Strongly Typed**: Request and response objects for all services (Adfali, Sadad, Local Bank Cards, T-Lync, MPGS).
