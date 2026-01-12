@@ -22,8 +22,12 @@ public class JavaHttpPlutuClient implements PlutuHttpClient {
     private final Duration timeout;
 
     public JavaHttpPlutuClient(Duration timeout) {
+        this(HttpClient.newBuilder().connectTimeout(timeout).build(), timeout);
+    }
+
+    public JavaHttpPlutuClient(HttpClient httpClient, Duration timeout) {
+        this.httpClient = httpClient;
         this.timeout = timeout;
-        this.httpClient = HttpClient.newBuilder().connectTimeout(timeout).build();
     }
 
     @Override

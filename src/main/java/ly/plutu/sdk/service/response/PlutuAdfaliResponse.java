@@ -24,4 +24,8 @@ public class PlutuAdfaliResponse {
         Object v = original.getResult().get("transaction_id");
         return v != null ? v.toString() : null;
     }
+
+    public boolean isSuccessful() {
+        return original.isSuccessful();
+    }
 }

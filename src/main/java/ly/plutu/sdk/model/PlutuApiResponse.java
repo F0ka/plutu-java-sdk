@@ -21,6 +21,9 @@ public class PlutuApiResponse {
     @JsonProperty("error")
     private PlutuError error;
 
+    @JsonProperty("message")
+    private String message;
+
     public Integer getStatus() {
         return status;
     }
@@ -43,6 +46,14 @@ public class PlutuApiResponse {
 
     public void setError(PlutuError error) {
         this.error = error;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public boolean isSuccessful() {
